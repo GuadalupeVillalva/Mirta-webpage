@@ -44,6 +44,10 @@
             box-shadow: $cardShadow;
             margin: 0.5rem 0;
         }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
         #message{
             height: 15vh;
         }

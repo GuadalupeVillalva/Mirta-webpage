@@ -10,7 +10,7 @@
 header {
   background: url(../images/header-img.jpg);
   height: 45vh;
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 2.1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -184,6 +184,9 @@ header {
       border-radius: 8px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       margin: 0.5rem 0; }
+    .section__contacto .consulta input::-webkit-outer-spin-button,
+    .section__contacto .consulta input::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
     .section__contacto .consulta #message {
       height: 15vh; }
     .section__contacto .consulta button {
