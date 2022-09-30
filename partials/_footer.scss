@@ -1,0 +1,19 @@
+footer{
+    background-color: $mediumColor;
+    height: 22vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $lightColor;
+    div{
+        display: flex;
+        justify-content: space-between;
+        min-width: 20vw;
+        max-width: 22vw;
+        ion-icon{
+            color: $lightColor;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.section__contacto{
+    padding: 1.5rem;
+    #contacto{
+        @include secondary-title;
+        margin-bottom: 1rem;
+    }
+    h4, h5{
+        color: $mediumColor;
+        font-size: 1.2em; 
+        font-family: $titleFont;
+    }
+    .dondeMeUbico{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        iframe{
+            width: 100%;
+            margin: 1rem 0;
+        }
+        p{
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+    h5{
+        font-size: 1em;
+    }
+    .consulta{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $cardColor;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: $cardShadow;
+        input{
+            width: 100%;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 8px;
+            box-shadow: $cardShadow;
+            margin: 0.5rem 0;
+        }
+        #message{
+            height: 15vh;
+        }
+        button{
+            @include secondary-button;
+            width: fit-content;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .socials{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 28vh;
+        margin: 2rem 0;
+        div{
+            display: flex;
+            ion-icon{
+                color: $mediumColor;
+                font-size: 2em;
+            }
+            p{
+                color: $mediumColor;
+                display: flex;
+                align-self: center;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

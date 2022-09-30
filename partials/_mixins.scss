@@ -1,0 +1,15 @@
+@mixin secondary-title {
+    font-family: $titleFont;
+    color: $mediumColor;
+    font-size: 1.4em;
+    margin-bottom: 0.5rem;
+}
+
+@mixin secondary-button {
+    background: $mediumColor;
+    color: $lightColor;
+    font-family: $buttonFont;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9em;
+}

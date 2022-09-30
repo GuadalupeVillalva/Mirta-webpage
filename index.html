@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik&display=swap" rel="stylesheet">
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="./scripts/index.js" defer type="module"></script>
     <title>MirtaGra</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="./icons/purple-logo.svg" alt="logo"></a>
-            <div>
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <a href="index.html" id="logo"></a>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+            </div>
+            <div class="header__nav-menu">
                 <a href="#mirtaGellert">Inicio</a>
                 <a href="#sobreMi">Sobre mi</a>
                 <a href="#tratamientos">Tratamientos</a>
                 <a href="#contacto">Contacto</a>
             </div>
         </nav>
-        <h1 id="mirtaGellert">Mirta Gellert</h1>
-        <h2>Esteticista - Cosmetóloga - Cosmiatra</h2>
-        <a href="https://wa.me/542216207720">AGENDAR CONSULTA</a>
+        <div class="header__content-container">
+            <h1 id="mirtaGellert">Mirta Gellert</h1>
+            <h2>Esteticista - Cosmetóloga - Cosmiatra</h2>
+            <a href="#" id="buttonConsulta">AGENDAR CONSULTA</a>
+        </div>
     </header>
     <section class="section__sobreMi">
-        <h3 id="sobreMi">Sobre mi</h3>
-        <p>Mi nombre es Mirta Graciela Gellert y cuento con 15 años de experiencia. Estoy constantemente capacitándome con los mejores profesionales para ofrecer a mis clientes los mejores resultados posibles.</p>
+        <h3 class="section__sobreMi-title" id="sobreMi">Sobre mi</h3>
+        <p class="section__sobreMi-body">Mi nombre es Mirta Graciela Gellert y cuento con 15 años de experiencia. Estoy constantemente capacitándome con los mejores profesionales para ofrecer a mis clientes los mejores resultados posibles.</p>
     </section>
     <section class="section__tratamientos">
         <h3 id="tratamientos">Tratamientos</h3>
@@ -51,23 +64,31 @@
         </div>
     </section>
     <section class="section__contacto">
-        <h3>Contacto</h3>
-        <div>
+        <h3 id="contacto">Contacto</h3>
+        <div class="dondeMeUbico">
             <h4>¿Dónde me ubico?</h4>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1SAdNZn-70gNXQ6w5dBhkpk3q5k_JvA0&ehbc=2E312F" width="640" height="480"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.0470196654337!2d-57.886018685204036!3d-34.88016557968368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad21e0b7b58cc65!2zMzTCsDUyJzQ4LjYiUyA1N8KwNTMnMDEuOCJX!5e0!3m2!1ses-419!2sar!4v1663719376194!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>Calle 16 entre 158 y 159, Berisso, Buenos Aires.</p>
         </div>
         <div>
             <h4>Formas de contacto</h4>
             <div>
-                <div>
+                <div class="consulta">
                     <h5>¿Tenés una consulta?</h5>
-                    <input type="text" name="name" id="name" placeholder="Nombre">
-                    <input type="number" name="phone-number" id="phone-number" placeholder="Celular">
-                    <input type="text" name="message" id="message" placeholder="Mensaje">
+                    <form action="">
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="Nombre">
+                        </label>
+                        <label for="phone-number">
+                            <input type="number" name="phone-number" id="phone-number" placeholder="Celular">
+                        </label>
+                        <label for="message">
+                            <input type="text" name="message" id="message" placeholder="Mensaje">
+                        </label>
+                    </form>
                     <button>ENVIAR</button>
                 </div>
-                <div>
+                <div class="socials">
                     <div>
                         <a href="https://www.instagram.com/mirtagra_tuspacio/"><ion-icon name="logo-instagram"></ion-icon></a>
                         <p>mirtagra_tuspacio</p>
@@ -92,5 +113,8 @@
         </div>
         <p>Copyright © 2022</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

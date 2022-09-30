@@ -1,0 +1,15 @@
+.section__sobreMi{
+    background: $mediumColor;
+    z-index: 0;
+    color: $lightColor;
+    padding: 1.5rem;
+    &-title{
+        font-family: $titleFont;
+        font-size: 1.4em;
+        margin-bottom: 0.5rem;
+    }
+    &-body{
+        font-family: $bodyFont;
+        font-size: 0.9em;
+    }
+}

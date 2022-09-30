@@ -1,3 +1,106 @@
-body{
-    background: red;
+header{
+    background: url(../images/header-img.jpg);
+    height: 45vh;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position-y: 2.1rem;
+    box-shadow: $headerShadow;
+    z-index: 100;
+    position: relative;
+    .header__nav{
+        &-logo{
+            background: $lightColor;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            #logo{
+                background-image: url(../icons/purple-logo.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 7vh;
+                width: 2.5rem;
+                max-width: 12vw;
+                padding: 0;
+            }
+            #logo:hover{
+                background-image: url(../icons/black-logo.svg);
+            }
+            .hamburger-menu{
+                z-index: 200;
+                width: 40px;
+                height: 40px;
+                border: none;
+                display: flex;
+                background: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                span{
+                    width: 37px;
+                    height: 4px;
+                    margin-bottom: 5px;
+                    background: $mediumColor;
+                    border-radius: 3px;
+                    z-index: 1000;
+                }
+            }
+            .hamburger-menu:hover span {
+                background-color: $darkColor
+            }
+        }
+        .header__nav-menu{
+            display: none;
+        }
+        .show{
+            display: flex;
+            flex-direction: column;
+            background: $lightColor;
+            font-family: $bodyFont;
+            font-size: 1.2em;
+            padding: 0.5rem 1rem;
+            position: absolute;
+            z-index: 1000;
+            width: 100vw;
+            a{
+                padding: 0.5rem 0;
+                color: $mediumColor;
+            }
+            a:hover{
+                color: $darkColor;
+            }
+        }
+    }
+    .header__content-container{
+        padding-top: 1.3rem;
+        padding-left: 1rem;
+        #mirtaGellert{
+            font-family: $titleFont;
+            color: $mediumColor;
+            font-size: 2.3em;
+        }
+        h2{
+            font-family: $bodyFont;
+            color: $mediumColor;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        #buttonConsulta{
+            font-family: $buttonFont;
+            color: $lightColor;
+            background-color: $mediumColor;
+            width: auto;
+            padding: 0.6rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.swal-title{
+    font-family: $titleFont;
+}
+
+.swal-text{
+    font-family: $bodyFont;
 }

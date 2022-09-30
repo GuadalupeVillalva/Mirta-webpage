@@ -3,7 +3,229 @@
   padding: 0%;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif; }
 
-body {
-  background: red; }
+header {
+  background: url(../images/header-img.jpg);
+  height: 45vh;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position-y: 2.1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 100;
+  position: relative; }
+  header .header__nav-logo {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem; }
+    header .header__nav-logo #logo {
+      background-image: url(../icons/purple-logo.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 7vh;
+      width: 2.5rem;
+      max-width: 12vw;
+      padding: 0; }
+    header .header__nav-logo #logo:hover {
+      background-image: url(../icons/black-logo.svg); }
+    header .header__nav-logo .hamburger-menu {
+      z-index: 200;
+      width: 40px;
+      height: 40px;
+      border: none;
+      display: flex;
+      background: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+      header .header__nav-logo .hamburger-menu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        background: #805D93;
+        border-radius: 3px;
+        z-index: 1000; }
+    header .header__nav-logo .hamburger-menu:hover span {
+      background-color: #141414; }
+  header .header__nav .header__nav-menu {
+    display: none; }
+  header .header__nav .show {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    z-index: 1000;
+    width: 100vw; }
+    header .header__nav .show a {
+      padding: 0.5rem 0;
+      color: #805D93; }
+    header .header__nav .show a:hover {
+      color: #141414; }
+  header .header__content-container {
+    padding-top: 1.3rem;
+    padding-left: 1rem; }
+    header .header__content-container #mirtaGellert {
+      font-family: "Bree Serif", serif;
+      color: #805D93;
+      font-size: 2.3em; }
+    header .header__content-container h2 {
+      font-family: "Rubik", sans-serif;
+      color: #805D93;
+      font-size: 1rem;
+      margin-bottom: 1.5rem; }
+    header .header__content-container #buttonConsulta {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #fff;
+      background-color: #805D93;
+      width: auto;
+      padding: 0.6rem;
+      border-radius: 8px;
+      margin-top: 1rem; }
+
+.swal-title {
+  font-family: "Bree Serif", serif; }
+
+.swal-text {
+  font-family: "Rubik", sans-serif; }
+
+.section__sobreMi {
+  background: #805D93;
+  z-index: 0;
+  color: #fff;
+  padding: 1.5rem; }
+  .section__sobreMi-title {
+    font-family: "Bree Serif", serif;
+    font-size: 1.4em;
+    margin-bottom: 0.5rem; }
+  .section__sobreMi-body {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.9em; }
+
+.section__tratamientos {
+  background: #fff;
+  z-index: 0;
+  color: #805D93;
+  padding: 1.5rem; }
+  .section__tratamientos #tratamientos {
+    font-family: "Bree Serif", serif;
+    color: #805D93;
+    font-size: 1.4em;
+    margin-bottom: 0.5rem; }
+  .section__tratamientos .card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .section__tratamientos .card__container .card {
+      background-color: #F9F4F5;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 10px;
+      padding: 1rem;
+      padding-bottom: 1.5rem;
+      margin: 1rem 0; }
+      .section__tratamientos .card__container .card h4 {
+        font-size: 1.2em; }
+      .section__tratamientos .card__container .card p {
+        margin: 0.5rem 0rem 1.2rem 0; }
+      .section__tratamientos .card__container .card .card_button {
+        background: #805D93;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-size: 0.9em; }
+
+.section__contacto {
+  padding: 1.5rem; }
+  .section__contacto #contacto {
+    font-family: "Bree Serif", serif;
+    color: #805D93;
+    font-size: 1.4em;
+    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; }
+  .section__contacto h4, .section__contacto h5 {
+    color: #805D93;
+    font-size: 1.2em;
+    font-family: "Bree Serif", serif; }
+  .section__contacto .dondeMeUbico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section__contacto .dondeMeUbico iframe {
+      width: 100%;
+      margin: 1rem 0; }
+    .section__contacto .dondeMeUbico p {
+      font-size: 0.8rem;
+      margin-bottom: 2rem; }
+  .section__contacto h5 {
+    font-size: 1em; }
+  .section__contacto .consulta {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F4F5;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .section__contacto .consulta input {
+      width: 100%;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 0.5rem 0; }
+    .section__contacto .consulta #message {
+      height: 15vh; }
+    .section__contacto .consulta button {
+      background: #805D93;
+      color: #fff;
+      font-family: "Source Sans Pro", sans-serif;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-size: 0.9em;
+      width: fit-content;
+      border: none;
+      cursor: pointer; }
+  .section__contacto .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 28vh;
+    margin: 2rem 0; }
+    .section__contacto .socials div {
+      display: flex; }
+      .section__contacto .socials div ion-icon {
+        color: #805D93;
+        font-size: 2em; }
+      .section__contacto .socials div p {
+        color: #805D93;
+        display: flex;
+        align-self: center;
+        margin-left: 0.5rem; }
+
+footer {
+  background-color: #805D93;
+  height: 22vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20vw;
+    max-width: 22vw; }
+    footer div ion-icon {
+      color: #fff; }

@@ -1,0 +1,32 @@
+.section__tratamientos{
+    background: $lightColor;
+    z-index: 0;
+    color: $mediumColor;
+    padding: 1.5rem;
+    #tratamientos{
+        @include secondary-title;
+    }
+    .card__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card{
+            background-color: $cardColor;
+            box-shadow: $cardShadow;
+            border-radius: 10px;
+            padding: 1rem;
+            padding-bottom: 1.5rem;
+            margin: 1rem 0;
+            h4{
+             font-size: 1.2em;   
+            }
+            p{
+                margin: 0.5rem 0rem 1.2rem 0;
+            }
+            .card_button{
+                @include secondary-button;
+            }
+        }
+    }
+}
