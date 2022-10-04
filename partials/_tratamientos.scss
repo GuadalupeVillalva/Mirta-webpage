@@ -11,7 +11,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .card{
+        .card__body{
             background-color: $cardColor;
             box-shadow: $cardShadow;
             border-radius: 10px;
@@ -27,6 +27,9 @@
             .card_button{
                 @include secondary-button;
             }
+        }
+        .card__img{
+            display: none;
         }
     }
 }

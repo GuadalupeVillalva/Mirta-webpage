@@ -1,0 +1,233 @@
+// tablet
+@media only screen and (min-width: 576px) and (max-width: 800px) {
+    header {
+        height: 70vh;
+        .header__nav{
+            #logo{
+                width: 6rem;
+            }
+        }
+        .header__content-container{
+            padding-top: 6.3rem;
+            #mirtaGellert{
+                font-size: 3.2em;
+            }
+            h2{
+                font-size: 1em;
+            }
+        }
+    }
+    .section__sobreMi{
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5rem;
+        &-title{
+            font-size: 1.9em;
+        }
+        &-body{
+            font-size: 1.1em;
+        }
+    }
+    .section__tratamientos{
+        padding: 2.5rem;
+        #tratamientos{
+            font-size: 1.9em;
+        }
+        .card__container{
+            .card__body{
+                padding: 2rem;
+                padding-bottom: 2.5rem;
+                h4{
+                    font-size: 1.5em;
+                }
+                p{
+                    font-size: 1.1em;
+                    margin: 1rem 0rem 2.3rem 0;
+                }
+                .card_button{
+                    padding: 0.5rem 2rem;
+                }
+            }
+        }
+    }
+    .section__contacto{
+        padding: 2.5rem;
+        #contacto{
+            font-size: 1.9em;
+        }
+        h4{
+            font-size: 1.5em;
+        }
+        h5{
+            font-size: 1.2em;
+            margin: 1rem;
+
+        }
+        .consulta{
+            height: 22rem;
+            input{
+                width: 90%;
+                height: 3rem;
+            }
+            button{
+                padding: 0.5rem 2rem;
+                margin: 0.8rem;
+            }
+        }
+    }
+    footer{
+        ion-icon{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media only screen and (min-width: 801px){
+    header{
+        height: 100vh;
+        .header__nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: $lightColor;
+            box-shadow: $headerShadow;
+            align-items: center;
+            .header__nav-logo {
+                background: none;
+                padding: 0.5rem 2.5rem;
+                box-shadow: none;
+                #logo{
+                    width: 7rem;
+                }
+                .hamburger-menu{
+                    display: none;
+                }
+            }
+            .header__nav-menu{
+                display: block;
+                padding-right: 2.5rem;
+                a{
+                    color: $mediumColor;
+                    margin: 0rem 1rem;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color: $darkColor;
+                }
+            }
+        }
+        .header__content-container{
+            padding-left: 2.5rem;
+            padding-top: 15rem;
+            #mirtaGellert{
+                font-size: 6em;
+                height: 7rem;
+            }
+            h2{
+                font-size: 1.4em;
+            }
+        }
+    }
+    .section__sobreMi{
+        height: 45vh;
+        padding: 4rem;
+        h3{
+            font-size: 2.5em;
+        }
+        p{
+            font-size: 1.6em;
+            width: 85vw;
+        }
+    }
+    .section__tratamientos{
+        padding: 4rem;
+        #tratamientos{
+            font-size: 2.5em;
+        }
+        .card__container{
+            .card{   
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .card__img{
+                    display: block;
+                    margin: 1rem;
+                    img{
+                        height: 50vh;
+                    }
+                    }
+                .card__body{
+                    width: 50vw;
+                    height: 50vh;
+                    padding: 2rem;
+                    h4{
+                        font-size: 2.2em;
+                    }
+                    p{
+                        font-size: 1.5em;
+                        margin: 1rem 0rem 2.5rem;
+                    }
+                    .card_button{
+                        padding: 0.5rem 2rem;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+    .section__contacto{
+        padding: 4rem;
+        #contacto{
+            font-size: 2.5em;
+        }
+        h4{
+            font-size: 2em;
+        }
+        .dondeMeUbico{
+            iframe{
+                width: 50%;
+                height: 55vh;
+            }
+        }
+        .container__socials{
+            display: flex;
+            .consulta{
+                width: 45vw;
+                h5{
+                    font-size: 1.7em;
+                    margin-bottom: 1rem;
+                }
+                input{
+                    height: 3rem;
+                }
+                button{
+                    padding: 0.5rem 2rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .socials{
+            margin-left: 2rem;
+            div{
+                ion-icon{
+                    font-size: 2.5em;
+                }
+                p{
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+    footer{
+        div{
+            justify-content: space-around;
+            ion-icon{
+                font-size: 1.5em;
+            }
+        }
+        p{
+            margin-top: 1rem;
+        }
+    }
+}

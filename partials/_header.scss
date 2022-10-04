@@ -8,18 +8,21 @@ header{
     z-index: 100;
     position: relative;
     .header__nav{
+        position: fixed;
+        width: 100vw;
         &-logo{
             background: $lightColor;
             display: flex;
             justify-content: space-between;
             padding: 0.5rem 1rem;
+            box-shadow: $headerShadow;
             #logo{
                 background-image: url(../icons/purple-logo.svg);
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: 100%;
+                background-position: center;
                 height: 7vh;
-                width: 2.5rem;
-                max-width: 12vw;
+                width: 5rem;
                 padding: 0;
             }
             #logo:hover{
@@ -72,7 +75,7 @@ header{
         }
     }
     .header__content-container{
-        padding-top: 1.3rem;
+        padding-top: 5rem;
         padding-left: 1rem;
         #mirtaGellert{
             font-family: $titleFont;
@@ -95,12 +98,4 @@ header{
             margin-top: 1rem;
         }
     }
-}
-
-.swal-title{
-    font-family: $titleFont;
-}
-
-.swal-text{
-    font-family: $bodyFont;
 }

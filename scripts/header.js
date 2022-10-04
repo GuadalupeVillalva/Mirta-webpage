@@ -8,9 +8,11 @@ hamburgerMenu.addEventListener('click', () => {
     console.log('hola')
 })
 
-//guardo en una constante el boton para iniciar una conversación
+//guardo en una constante el boton para AGENDAR CONSULTA
 const buttonConsulta = document.getElementById('buttonConsulta');
 
+
+//alerta al presionar el botón de AGENDAR CONSULTA
 buttonConsulta.addEventListener('click', () => {
     Swal.fire({
         title: 'Iniciar chat',

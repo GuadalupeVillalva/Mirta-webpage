@@ -16,60 +16,64 @@ header {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   z-index: 100;
   position: relative; }
-  header .header__nav-logo {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 1rem; }
-    header .header__nav-logo #logo {
-      background-image: url(../icons/purple-logo.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 7vh;
-      width: 2.5rem;
-      max-width: 12vw;
-      padding: 0; }
-    header .header__nav-logo #logo:hover {
-      background-image: url(../icons/black-logo.svg); }
-    header .header__nav-logo .hamburger-menu {
-      z-index: 200;
-      width: 40px;
-      height: 40px;
-      border: none;
-      display: flex;
-      background: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer; }
-      header .header__nav-logo .hamburger-menu span {
-        width: 37px;
-        height: 4px;
-        margin-bottom: 5px;
-        background: #805D93;
-        border-radius: 3px;
-        z-index: 1000; }
-    header .header__nav-logo .hamburger-menu:hover span {
-      background-color: #141414; }
-  header .header__nav .header__nav-menu {
-    display: none; }
-  header .header__nav .show {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    font-family: "Rubik", sans-serif;
-    font-size: 1.2em;
-    padding: 0.5rem 1rem;
-    position: absolute;
-    z-index: 1000;
+  header .header__nav {
+    position: fixed;
     width: 100vw; }
-    header .header__nav .show a {
-      padding: 0.5rem 0;
-      color: #805D93; }
-    header .header__nav .show a:hover {
-      color: #141414; }
+    header .header__nav-logo {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
+      header .header__nav-logo #logo {
+        background-image: url(../icons/purple-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        height: 7vh;
+        width: 5rem;
+        padding: 0; }
+      header .header__nav-logo #logo:hover {
+        background-image: url(../icons/black-logo.svg); }
+      header .header__nav-logo .hamburger-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; }
+        header .header__nav-logo .hamburger-menu span {
+          width: 37px;
+          height: 4px;
+          margin-bottom: 5px;
+          background: #805D93;
+          border-radius: 3px;
+          z-index: 1000; }
+      header .header__nav-logo .hamburger-menu:hover span {
+        background-color: #141414; }
+    header .header__nav .header__nav-menu {
+      display: none; }
+    header .header__nav .show {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      font-family: "Rubik", sans-serif;
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+      position: absolute;
+      z-index: 1000;
+      width: 100vw; }
+      header .header__nav .show a {
+        padding: 0.5rem 0;
+        color: #805D93; }
+      header .header__nav .show a:hover {
+        color: #141414; }
   header .header__content-container {
-    padding-top: 1.3rem;
+    padding-top: 5rem;
     padding-left: 1rem; }
     header .header__content-container #mirtaGellert {
       font-family: "Bree Serif", serif;
@@ -88,12 +92,6 @@ header {
       padding: 0.6rem;
       border-radius: 8px;
       margin-top: 1rem; }
-
-.swal-title {
-  font-family: "Bree Serif", serif; }
-
-.swal-text {
-  font-family: "Rubik", sans-serif; }
 
 .section__sobreMi {
   background: #805D93;
@@ -123,24 +121,26 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .section__tratamientos .card__container .card {
+    .section__tratamientos .card__container .card__body {
       background-color: #F9F4F5;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 10px;
       padding: 1rem;
       padding-bottom: 1.5rem;
       margin: 1rem 0; }
-      .section__tratamientos .card__container .card h4 {
+      .section__tratamientos .card__container .card__body h4 {
         font-size: 1.2em; }
-      .section__tratamientos .card__container .card p {
+      .section__tratamientos .card__container .card__body p {
         margin: 0.5rem 0rem 1.2rem 0; }
-      .section__tratamientos .card__container .card .card_button {
+      .section__tratamientos .card__container .card__body .card_button {
         background: #805D93;
         color: #fff;
         font-family: "Source Sans Pro", sans-serif;
         padding: 0.5rem;
         border-radius: 5px;
         font-size: 0.9em; }
+    .section__tratamientos .card__container .card__img {
+      display: none; }
 
 .section__contacto {
   padding: 1.5rem; }
@@ -232,3 +232,159 @@ footer {
     max-width: 22vw; }
     footer div ion-icon {
       color: #fff; }
+
+@media only screen and (min-width: 576px) and (max-width: 800px) {
+  header {
+    height: 70vh; }
+    header .header__nav #logo {
+      width: 6rem; }
+    header .header__content-container {
+      padding-top: 6.3rem; }
+      header .header__content-container #mirtaGellert {
+        font-size: 3.2em; }
+      header .header__content-container h2 {
+        font-size: 1em; }
+  .section__sobreMi {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem; }
+    .section__sobreMi-title {
+      font-size: 1.9em; }
+    .section__sobreMi-body {
+      font-size: 1.1em; }
+  .section__tratamientos {
+    padding: 2.5rem; }
+    .section__tratamientos #tratamientos {
+      font-size: 1.9em; }
+    .section__tratamientos .card__container .card__body {
+      padding: 2rem;
+      padding-bottom: 2.5rem; }
+      .section__tratamientos .card__container .card__body h4 {
+        font-size: 1.5em; }
+      .section__tratamientos .card__container .card__body p {
+        font-size: 1.1em;
+        margin: 1rem 0rem 2.3rem 0; }
+      .section__tratamientos .card__container .card__body .card_button {
+        padding: 0.5rem 2rem; }
+  .section__contacto {
+    padding: 2.5rem; }
+    .section__contacto #contacto {
+      font-size: 1.9em; }
+    .section__contacto h4 {
+      font-size: 1.5em; }
+    .section__contacto h5 {
+      font-size: 1.2em;
+      margin: 1rem; }
+    .section__contacto .consulta {
+      height: 22rem; }
+      .section__contacto .consulta input {
+        width: 90%;
+        height: 3rem; }
+      .section__contacto .consulta button {
+        padding: 0.5rem 2rem;
+        margin: 0.8rem; }
+  footer ion-icon {
+    font-size: 1.5em; } }
+
+@media only screen and (min-width: 801px) {
+  header {
+    height: 100vh; }
+    header .header__nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      align-items: center; }
+      header .header__nav .header__nav-logo {
+        background: none;
+        padding: 0.5rem 2.5rem;
+        box-shadow: none; }
+        header .header__nav .header__nav-logo #logo {
+          width: 7rem; }
+        header .header__nav .header__nav-logo .hamburger-menu {
+          display: none; }
+      header .header__nav .header__nav-menu {
+        display: block;
+        padding-right: 2.5rem; }
+        header .header__nav .header__nav-menu a {
+          color: #805D93;
+          margin: 0rem 1rem;
+          font-weight: bold; }
+        header .header__nav .header__nav-menu a:hover {
+          color: #141414; }
+    header .header__content-container {
+      padding-left: 2.5rem;
+      padding-top: 15rem; }
+      header .header__content-container #mirtaGellert {
+        font-size: 6em;
+        height: 7rem; }
+      header .header__content-container h2 {
+        font-size: 1.4em; }
+  .section__sobreMi {
+    height: 45vh;
+    padding: 4rem; }
+    .section__sobreMi h3 {
+      font-size: 2.5em; }
+    .section__sobreMi p {
+      font-size: 1.6em;
+      width: 85vw; }
+  .section__tratamientos {
+    padding: 4rem; }
+    .section__tratamientos #tratamientos {
+      font-size: 2.5em; }
+    .section__tratamientos .card__container .card {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .section__tratamientos .card__container .card .card__img {
+        display: block;
+        margin: 1rem; }
+        .section__tratamientos .card__container .card .card__img img {
+          height: 50vh; }
+      .section__tratamientos .card__container .card .card__body {
+        width: 50vw;
+        height: 50vh;
+        padding: 2rem; }
+        .section__tratamientos .card__container .card .card__body h4 {
+          font-size: 2.2em; }
+        .section__tratamientos .card__container .card .card__body p {
+          font-size: 1.5em;
+          margin: 1rem 0rem 2.5rem; }
+        .section__tratamientos .card__container .card .card__body .card_button {
+          padding: 0.5rem 2rem;
+          font-size: 1.1em; }
+  .section__contacto {
+    padding: 4rem; }
+    .section__contacto #contacto {
+      font-size: 2.5em; }
+    .section__contacto h4 {
+      font-size: 2em; }
+    .section__contacto .dondeMeUbico iframe {
+      width: 50%;
+      height: 55vh; }
+    .section__contacto .container__socials {
+      display: flex; }
+      .section__contacto .container__socials .consulta {
+        width: 45vw; }
+        .section__contacto .container__socials .consulta h5 {
+          font-size: 1.7em;
+          margin-bottom: 1rem; }
+        .section__contacto .container__socials .consulta input {
+          height: 3rem; }
+        .section__contacto .container__socials .consulta button {
+          padding: 0.5rem 2rem;
+          margin-top: 1rem; }
+    .section__contacto .socials {
+      margin-left: 2rem; }
+      .section__contacto .socials div ion-icon {
+        font-size: 2.5em; }
+      .section__contacto .socials div p {
+        font-size: 1.2em; }
+  footer div {
+    justify-content: space-around; }
+    footer div ion-icon {
+      font-size: 1.5em; }
+  footer p {
+    margin-top: 1rem; } }
