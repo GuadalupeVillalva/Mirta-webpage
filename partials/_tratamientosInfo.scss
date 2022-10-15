@@ -1,0 +1,70 @@
+main{
+    margin-bottom: 26.3vh;
+    padding: 1.5rem;
+    .title__select{
+        padding-top: 4.5rem;
+        display: flex;
+        color: $mediumColor;
+        h1{
+            font-size: 1.3em;
+            margin: 0;
+        }
+        select{
+            border: none;
+            color: $mediumColor;
+            font-size: 1.2em;
+            margin-left: 0.3rem;
+            margin-bottom: 3px;
+        }
+        select:focus-visible{
+            outline: none;
+        }
+    }
+    .info{
+        display: none;
+
+    }
+    .show{
+        display: block;
+        .accordion-item .accordion-button, .accordion-header button[aria-expanded="true"] {
+            color: $lightColor;
+            background-color: $mediumColor;
+            font-weight: bold;
+        }
+        .accordion-body{
+            color: $mediumColor;
+        }
+        .accordion-button:focus-visible, .accordion-button:focus{
+            outline: none !important;
+            box-shadow: none;
+        }
+        .accordion-button:not(.collapsed)::after, .accordion-button.collapsed::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); 
+        }
+    }
+    #okBtn {
+        padding: 0.2rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background: $mediumColor;
+        margin: 0.5rem 0;
+        color: $lightColor;
+    }
+    #search{
+        margin-top: 5rem;
+    }
+    .productos__cards{
+        margin-top: 3rem;
+        color: $mediumColor;
+        box-shadow: $cardShadow;
+        padding: 3rem;
+        border-radius: 8px;
+        h3{
+            font-family: $titleFont;
+        }
+    }
+    .hide{
+        display: none;
+    }
+}
+

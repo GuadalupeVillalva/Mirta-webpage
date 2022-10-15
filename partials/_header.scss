@@ -99,3 +99,16 @@ header{
         }
     }
 }
+
+#header__info{
+    background-image: none;
+    box-shadow: none;
+    height: auto;
+    .header__nav{
+        &-menu{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

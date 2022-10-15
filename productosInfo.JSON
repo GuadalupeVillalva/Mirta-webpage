@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Lidherma",
+        "description": "Los productos Lidherma son desarrollados con activos innovadores y de probada eficacia, según las más altas exigencias de fabricación y calidad, bajo normas GMP (Good Manufacturing Practices) certificadas por la Organización Mundial de la Salud. Llegan al consumidor final merced a la indicación de profesionales de la estética quienes evalúan la necesidad del cliente y recomiendan el más adecuado para su tipo de piel y estilo de vida."
+    },
+    {
+        "name": "Carthage",
+        "description": "Es una empresa Argentina de Cosmética y Estética de Avanzada creada por expertos altamente calificados en productos cosméticos y dermatológicos."
+    },
+    {
+        "name": "Dermassy",
+        "description": "Empresa argentina con más de 16 años en el mercado profesional. Importan tratamientos tanto faciales como corporales para que los profesionales de la estética estén siempre brindando las últimas novedades a sus pacientes."
+    },
+    {
+        "name": "Exel",
+        "description": "Es un laboratorio argentino de proyección internacional que desarrolla productos cosmeticos profesionales para la salud, belleza y bienestar."
+    },
+    {
+        "name": "Idraet",
+        "description": "Idraet es una empresa especialista en el campo de la Estética Integral."
+    },
+    {
+        "name": "LACA",
+        "description": "Laboratorio de Cosmética Avanzada es una empresa argentina dedicada al servicio integral de la belleza profesional. Está a la vanguardia en el desarrollo de productos cosméticos de última generación, bajo las principales normas de calidad y con principios activos innovadores."
+    }
+]

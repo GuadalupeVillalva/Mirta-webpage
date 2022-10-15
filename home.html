@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./scripts/index.js" defer type="module"></script>
+    <title>MirtaGra</title>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <a href="home.html" id="logo"></a>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+            </div>
+            <div class="header__nav-menu">
+                <a href="#mirtaGellert">Inicio</a>
+                <a href="#sobreMi">Sobre mi</a>
+                <a href="#tratamientos">Tratamientos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+        <div class="header__content-container">
+            <h1 id="mirtaGellert">Mirta Gellert</h1>
+            <h2>Esteticista - Cosmetóloga - Cosmiatra</h2>
+            <a href="#" id="buttonConsulta">AGENDAR CONSULTA</a>
+        </div>
+    </header>
+    <section class="section__sobreMi">
+        <h3 class="section__sobreMi-title" id="sobreMi">Sobre mi</h3>
+        <p class="section__sobreMi-body">Mi nombre es Mirta Graciela Gellert y cuento con 15 años de experiencia. Estoy constantemente capacitándome con los mejores profesionales para ofrecer a mis clientes los mejores resultados posibles.</p>
+    </section>
+    <section class="section__tratamientos">
+        <h3 id="tratamientos">Tratamientos</h3>
+        <div class="card__container">
+            <div class="card">
+                <div class="card__body">
+                    <h4 class="card__title">Faciales</h4>
+                    <p class="card__text">Los tratamientos faciales estéticos no invasivos te ayudarán a recuperar la luminosidad de tu piel y rostro. Todos ellos surgen a partir de un diagnóstico previo.</p>
+                    <a href="./tratamientosInfo.html" class="card_button">VER MÁS</a>
+                </div>
+                <div class="card__img">
+                    <img src="./images/tratamiento-facial.jpg" alt="facial-treatment">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./images/tratamiento-corporal.jpg" alt="body-treatment">
+                </div>
+                <div class="card__body">
+                    <h4 class="card__title">Corporales</h4>
+                    <p class="card__text">Aplico las mejores técnicas y equipamiento de éstetica no invasiva. Siempre realizo un diagnóstico previo para identificar la aplicación más adecuada.</p>
+                    <a href="./tratamientosInfo.html" class="card_button">VER MÁS</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__body">
+                    <h4 class="card__title">¿Qué utilizo?</h4>
+                    <p class="card__text">Empleo los mejores equipos y productos de primera marca. Esto me permite abarcar todas las áreas del cuerpo y sus problemáticas, brindando a mis clientes el mejor tratamiento.</p>
+                    <a href="./tratamientosInfo.html" class="card_button">VER MÁS</a>
+                </div>
+                <div class="card__img">
+                    <img src="./images/productos-uso.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__contacto">
+        <h3 id="contacto">Contacto</h3>
+        <div class="dondeMeUbico">
+            <h4>¿Dónde me ubico?</h4>
+            <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.0470196654337!2d-57.886018685204036!3d-34.88016557968368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad21e0b7b58cc65!2zMzTCsDUyJzQ4LjYiUyA1N8KwNTMnMDEuOCJX!5e0!3m2!1ses-419!2sar!4v1663719376194!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Calle 16 entre 158 y 159, Berisso, Buenos Aires.</p>
+        </div>
+        <div>
+            <h4>Formas de contacto</h4>
+            <div class="container__socials">
+                <div class="consulta">
+                    <h5>¿Tenés una consulta?</h5>
+                    <form action="" id="form">
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="Nombre" required>
+                        </label>
+                        <label for="phoneNumber">
+                            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Número de teléfono" required>
+                        </label>
+                        <label for="message">
+                            <input type="text" name="message" id="message" placeholder="Mensaje" required>
+                        </label>
+                        <button id="sendBtn">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="socials">
+                    <div>
+                        <a href="https://www.instagram.com/mirtagra_tuspacio/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <p>mirtagra_tuspacio</p>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/542216207720"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <p>(+54) 221 620-7720</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/mirtagra.tuspacio.7"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <p>Mirtagra Tuspacio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/mirtagra_tuspacio/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://wa.me/542216207720"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="https://www.facebook.com/mirtagra.tuspacio.7"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        <p>Copyright © 2022</p>
+    </footer>
+    <!-- ION ICON JS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- SWEET ALERT JS -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- EMAILJS JS -->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('YwZ4_KfZuVMn6lBcB')
+    </script>
+</body>
+</html>

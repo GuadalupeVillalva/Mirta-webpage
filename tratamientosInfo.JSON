@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Lifting Facial",
+        "description": "Con el Lifting sin cirugía desde la primer sesión el paciente sentirá el cambio, a partir de la tercera notará los resultados y a partir de la quinta verá un efecto lifting."
+    },
+    {
+        "name": "Microrrelleno de Arrugas",
+        "description": "El microrelleno facial es el tratamiento más actual que consigue la eliminación de líneas de expresión y arrugas, reduciendo notablemente la profundidad. Es un método antiaging extraordinario, no invasivo y con resultados visibles desde la primera sesión."
+    },
+    {
+        "name":"Tratamientos para rosácea",
+        "description":"La rosácea es una afección inflamatoria de la piel que se caracteriza por enrojecimiento y eritema en la zona de los pómulos, en algunos casos acompañado de descamación. La luz solar, el estrés, los gérmenes y traumas físicos son factores que aumentan los riesgos de padecer esta afección."
+    },
+    {
+        "name":"Ultacavitacion",
+        "description":"La ultracavitación es una técnica reductora cuya principal finalidad es eliminar los depósitos de grasa acumulados en el cuerpo de una manera no invasiva, es decir, sin recurrir a cirugía. Las zonas tratadas con ultracavitación son los muslos, las caderas, los brazos y el abdomen."
+    },
+    {
+        "name":"Vela Sculpting",
+        "description":"El Vela Sculpting es un tratamiento corporal que combina radiofrecuencia, infrarrojos, vacío y succión, y una exclusiva tecnología para lograr una auténtica lipoescultura sin bisturí. Reduce la grasa acumulada, reafirmando y regenerando los tejidos. Además ayuda al organismo a eliminar líquidos."
+    },
+    {
+        "name":"Ondas Rusas",
+        "description":"Las Ondas Rusas se emplean tanto en fisioterapia como en estética. Al ser aplicadas sobre el cuerpo  muscular generan una contracción involuntaria, no alteran la sensación cutánea, mejoran el trofismo muscular y fuerza gracias a que actúan en profundidad."
+    }
+]

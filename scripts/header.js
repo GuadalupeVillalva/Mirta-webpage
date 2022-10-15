@@ -5,7 +5,6 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 hamburgerMenu.addEventListener('click', () => {
     const menu = document.querySelector(".header__nav-menu");
     menu.classList.toggle("show")
-    console.log('hola')
 })
 
 //guardo en una constante el boton para AGENDAR CONSULTA
@@ -30,3 +29,5 @@ buttonConsulta.addEventListener('click', () => {
         }
       })
 })
+
+export { hamburgerMenu, buttonConsulta}
